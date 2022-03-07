@@ -1,0 +1,14 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+Entity division is
+	generic( n: integer := 3);
+	port( A, B: in std_logic_vector(n downto 0);
+				R: in std_logic_vector(n downto 0));
+end division;
+
+Architecture solve of division is
+begin
+	R <= A/B;
+end Architecture;
