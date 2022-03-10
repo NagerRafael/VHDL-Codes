@@ -1,0 +1,27 @@
+|ContadorSinc
+P[0] => Q.DATAB
+P[1] => Q.DATAB
+P[2] => Q.DATAB
+P[3] => Q.DATAB
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+load => process_0.IN0
+load => process_0.IN0
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+enp => process_0.IN1
+enp => process_0.IN1
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+Q[0] <> Q[0]~reg0
+Q[1] <> Q[1]~reg0
+Q[2] <> Q[2]~reg0
+Q[3] <> Q[3]~reg0
+
+
