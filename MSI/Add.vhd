@@ -1,5 +1,4 @@
 --Adder of 2 number of n bits
---https://vasanza.blogspot.com
 
 --Library
 library ieee;
