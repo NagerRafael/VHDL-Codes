@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+use ieee.std_logic_unsigned.all;
+
+Entity rest is
+	generic( n: integer:= 4);
+	port( A, B: in std_logic_vector(n-1 downto 0);
+				S: in std_logic;
+				R: out std_logic_vector(n downto 0));
+end rest;
+
+Architecture of rest is
+
+begin
+	with S select 
+				R <= ('0'& A)-('0'& B) when '0',
+				R <= '0' & (A-B)       when '1',
+				unaffected             when others;
+				
+end architecture;
